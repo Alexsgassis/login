@@ -1,0 +1,118 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    width: 100%;
+    background-color: rgb(18, 29, 49);
+    
+    background-image: url(/image/background6.jpg);
+    background-repeat: no-repeat;
+    background-position:initial;
+    background-size: cover;
+    
+    /* transform: scale(2); */
+    /* transform-origin: 0 0; */
+    /* height: 130px */
+  }
+  
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #000208b0;
+    height: 60vh;
+    border: 2px solid rgb(255, 255, 255,0.5);
+    /* background: transparent;
+    backdrop-filter: blur(15px); */
+}
+
+.title {
+    
+    text-align: center;
+    margin-bottom:30px ;
+}
+
+
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .label-float input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    /* -webkit-appearance:none; */
+    border-radius:0;
+    /* background: transparent;
+    backdrop-filter: blur(15px); */
+  }
+  
+  .label-float input:focus{
+    border-bottom: 2px solid #B13760;
+  }
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+
+  /* .label-float input:required:invalid + label{
+    color: red;
+  } */
+  /* .label-float input:focus:required:invalid{
+    border-bottom: 2px solid red;
+  } */
+  /* .label-float input:required:invalid + label:before{
+    content: '*';
+  } */
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: -1px;
+  } 
+
+
+
+ion-icon {
+    color: #B13760;
+    /* cursor:pointer; */
+    width: 20px;
+    height: 20px;
+}
+
