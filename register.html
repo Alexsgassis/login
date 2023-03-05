@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
-    <main class="center-box-login">
+    <main class="center-box-register">
         <form action="">
-            <h1 class="title">Login</h1>
+            <h1 class="title">Register</h1>
+            <div class="label-float">
+                <input type="text" id="##"  placeholder="ㅤ">
+                <label for="##">Name</label>
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
             <div class="label-float">
                 <input type="text" id="##" placeholder="ㅤ">
                 <label for="##">Email</label>
@@ -25,18 +28,18 @@
                 <label for="##">Password</label>
                 <ion-icon name="lock-closed-outline"></ion-icon>
             </div>
-            <div class="box-checkbox">
-            <input type="checkbox" id="check" class="checkbox">
-            <label for="check" class="checkbox">Remember Me Forget Password</label>
+            <div class="label-float">
+                <input type="password" id="##" placeholder="ㅤ">
+                <label for="##">Confirm Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
             </div>
-            <button class="btn">Login</button>
+            <button class="btn">Register</button>
         </form>
         <section class="have">
-            <p>Don't you have a account! 
-                <a class="registrar" href="register.html">Register</a> 
+            <p>Do you have a account! 
+                <a class="logar" href="index.html">Login</a> 
             </p>
         </section>
-        
     </main>
 </body>
 </html>
